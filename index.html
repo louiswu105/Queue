@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" type="image/png" href="favicon.png" />
 
-    <title>New Age - Start Bootstrap Theme</title>
+    <title>Queued Landing Website</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,32 +34,32 @@
 <body id="page-top">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png"/></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a href="#download">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#features">Features</a>
+                        <a href="#features">Faq</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a href="#contact">Support</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Host</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
     </nav>
 
     <header>
@@ -67,8 +68,9 @@
                 <div class="col-sm-7">
                     <div class="header-content">
                         <div class="header-content-inner">
-                            <h1>New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-                            <a href="#download" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>
+                            <h1 style="font-weight:bold;">Song requests are a thing of the past.</h1>
+                            <h2>With <b>Queue’d</b>, the crowd decides what plays next.</h2>
+                            <a href="#download" class="btn btn-outline btn-xl page-scroll">And It's Free</a>
                         </div>
                     </div>
                 </div>
@@ -78,7 +80,7 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt="">
+                                    <img src="img/iphone7.png" class="img-responsive" alt="">
                                 </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -91,100 +93,59 @@
         </div>
     </header>
 
-    <section id="download" class="download bg-primary text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2 class="section-heading">Discover what all the buzz is about!</h2>
-                    <p>Our app is available on any mobile device! Download now to get started!</p>
-                    <div class="badges">
-                        <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-                        <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="features" class="features">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-heading">
-                        <h2>Unlimited Features, Unlimited Fun</h2>
-                        <p class="text-muted">Check out what you can do with this app theme!</p>
-                        <hr>
+            <div class="row parallax">
+                <div class="col-sm-5">
+                    <img src="img/easy_check.png"/>
+                </div>
+                <div class="col-sm-7">
+                    <div class="title">
+                    	Easy Check In<span class="red_dot">.</span>
+                    </div>
+                    <div class="contents">
+                    	<p>With Queue’d, participation is fast and flawless. Once the app knows where you are, we’ll show you every venue in your area with open check ins. </p>
+                    	<p>Simply choose your favorite spot, then...well, actually that’s it.</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt=""> </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
-                            </div>
-                        </div>
+            <div class="row parallax">
+                <div class="col-sm-7">
+                    <div class="title">
+                    	Songs You Want<span class="red_dot">.</span>
+                    </div>
+                    <div class="contents">
+                    	<p>Everyone has an equal say, and this little democracy allows anyone to search and queue their favorite tracks. Choose from your Spotify playlists, or use our search engine to find that song stuck in your head. </p>
+                    	<div><img src="img/spotify.png"/></div>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-screen-smartphone text-primary"></i>
-                                    <h3>Device Mockups</h3>
-                                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-camera text-primary"></i>
-                                    <h3>Flexible Use</h3>
-                                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-present text-primary"></i>
-                                    <h3>Free to Use</h3>
-                                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-lock-open text-primary"></i>
-                                    <h3>Open Source</h3>
-                                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-sm-5">
+                    <img src="img/song_list.png"/>
+                </div>
+            </div>
+            <div class="row parallax">
+                <div class="col-sm-5">
+                    <img src="img/you_decide.png"/>
+                </div>
+                <div class="col-sm-7">
+                    <div class="title">
+                    	You Decide<span class="red_dot">.</span>
+                    </div>
+                    <div class="contents">
+                    	<p>See a song in the queue that you aren’t quite feeling? </p>
+                    	<a href="#">Downvote it!</a>
+                    	<p>How about one you really love?</p>
+                    	<a href="#">Upvote it!</a>
+                    	<p>The highest voted and most popular track is always on top, ready to play next. We took the power and <span style="color:red">gave it back to you — the people.</span></p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="cta">
-        <div class="cta-content">
-            <div class="container">
-                <h2>Stop waiting.<br>Start building.</h2>
-                <a href="#contact" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a>
-            </div>
-        </div>
-        <div class="overlay"></div>
     </section>
 
     <section id="contact" class="contact bg-primary">
         <div class="container">
-            <h2>We <i class="fa fa-heart"></i> new friends!</h2>
+            <h2>What People Say<span class="red_dot">.</span></h2>
             <ul class="list-inline list-social">
                 <li class="social-twitter">
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -199,18 +160,42 @@
         </div>
     </section>
 
+    <section id="download" class="download bg-primary text-center">
+        <div class="container">
+            <div class="row">
+            	<img src="img/download.png"/>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="section-heading">Give it a Try<span class="red_dot">.</span></h2>
+                    <p>It’s free to use, free to download, and you don’t even have to sign in to anything!</p>
+                    <div class="badges">
+                        <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+                        <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <p>&copy; 2016 Start Bootstrap. All Rights Reserved.</p>
             <ul class="list-inline">
                 <li>
-                    <a href="#">Privacy</a>
+                    <a href="#">About</a>
                 </li>
                 <li>
-                    <a href="#">Terms</a>
+                    <a href="#">Faq</a>
                 </li>
                 <li>
-                    <a href="#">FAQ</a>
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <a href="#">Hosting</a>
+                </li>
+                <li>
+                    <a href="#">Company Site</a>
                 </li>
             </ul>
         </div>
