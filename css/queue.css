@@ -392,15 +392,29 @@ section.contact h3{
 section.contact ul.list-member {
   margin-top: 80px;
 }
+section.contact ul.list-member .wrapper{
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-top:30px;
+}
+section.contact ul.list-member .active .wrapper{
+  margin-top:0px;
+}
+section.contact ul.list-member .active .arrow{ 
+    border-top: 15px solid white;
+}
+
 section.contact ul.list-member .description{
   border:1px solid #e0e0e0;
   padding:30px;
   text-align:left;
-  margin-top:30px;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
 }
+section.contact ul.list-member .active .description{
+  border-width:0;
+  box-shadow: 2px 20px 20px 11px rgba(220, 220, 220, 0.5)
+}
+
 section.contact ul.list-member .arrow{ 
     margin-left: 7%;
     margin-top:-1px;
@@ -424,7 +438,13 @@ section.contact ul.list-member .description a{
   color:red;
   font-weight:bold;
 }
+section.contact ul.list-member .active .profile{
+  margin-top:52px;
+}
 section.contact ul.list-member .profile{
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;  
   margin-top:20px;
   text-align: left;
 }

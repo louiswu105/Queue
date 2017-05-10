@@ -28,6 +28,11 @@
         }
     })
 
+    $('.contact li').hover(function(){
+        $(this).toggleClass('active');
+        // $(this).find('.description').height( $(this).find('.description').height() + 20 );
+    });
+
     var isMobile = {
         Android: function() {
             return navigator.userAgent.match(/Android/i);
