@@ -381,39 +381,72 @@ section.contact h2 {
   margin-top: 0;
   margin-bottom: 25px;
 }
-section.contact h2 i {
-  color: #dd4b39;
+section.contact h3{
+  font-size:18px;
+  color:#808080;
+  margin-top:0;
+  letter-spacing: 0.1px;
+  line-height:32px;
 }
-section.contact ul.list-social {
-  margin-bottom: 0;
+
+section.contact ul.list-member {
+  margin-top: 80px;
 }
-section.contact ul.list-social li a {
-  display: block;
-  height: 80px;
-  width: 80px;
-  line-height: 80px;
-  font-size: 40px;
-  border-radius: 100%;
-  color: white;
+section.contact ul.list-member .description{
+  border:1px solid #e0e0e0;
+  padding:30px;
+  text-align:left;
+  margin-top:30px;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
 }
-section.contact ul.list-social li.social-twitter a {
-  background-color: #1da1f2;
+section.contact ul.list-member .arrow{ 
+    margin-left: 7%;
+    margin-top:-1px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #e0e0e0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent; 
 }
-section.contact ul.list-social li.social-twitter a:hover {
-  background-color: #0d95e8;
+section.contact ul.list-member .arrow div{
+    position: relative;
+    top: -15px;
+    left: -13px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid white;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent; 
 }
-section.contact ul.list-social li.social-facebook a {
-  background-color: #3b5998;
+section.contact ul.list-member .description a{
+  color:red;
+  font-weight:bold;
 }
-section.contact ul.list-social li.social-facebook a:hover {
-  background-color: #344e86;
+section.contact ul.list-member .profile{
+  margin-top:20px;
+  text-align: left;
 }
-section.contact ul.list-social li.social-google-plus a {
-  background-color: #dd4b39;
+section.contact ul.list-member .profile .member_avatar{
+  float:left;
 }
-section.contact ul.list-social li.social-google-plus a:hover {
-  background-color: #d73925;
+section.contact ul.list-member .profile .member_avatar img{
+  border-radius:50%;
+  width:60px; height:60px;
 }
+section.contact ul.list-member .profile .member_name{
+  color:#363636;
+  font-size:18px;
+  margin-left:80px;
+}
+section.contact ul.list-member .profile .role{
+  color:#667386;
+  font-size:16px;
+  margin-left:80px;
+  text-transform: uppercase;
+}
+
 footer {
   text-transform: uppercase;
 }
