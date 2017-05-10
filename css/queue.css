@@ -148,7 +148,7 @@ header {
   position: relative;
   width: 100%;
   min-height: auto;
-  overflow-y: hidden;
+  /*overflow-y: hidden;*/
   background: url("../img/bg-pattern.png"), #1C2A35;
   /* fallback for old browsers */
   background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to top, #333, #FF5B5b);
@@ -290,20 +290,28 @@ section.features .feature-item {
 section.features .device-container {
   margin-bottom: 100px;
 }
-section.features:before{
-    -moz-transform: translateY(-100%);
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    content: '';
-    top: 0;    
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 18em;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAnIGhlaWdodD0nMTAwJyB2aWV3Qm94PScwIDAgMTAwIDEwMCcgcHJlc2VydmVBc3BlY3RSYXRpbz0nbm9uZSc+PHBvbHlnb24gcG9pbnRzPScwLDAgMCwxMDAgMTAwLDEwMCcgc3R5bGU9J2ZpbGw6I2Y1ZjhmYTsnIC8+PC9zdmc+");
-    background-image:url(../img/triangle_bg.png);
+
+/* header BG */
+header .container, section.features .container{ z-index:500; position:relative;}
+section.features{
+  background:white;
+  z-index:150;
+  position: relative;
+}
+section.features:before {
+  position: absolute;
+  margin-top:-10%;
+  top:0;
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-3.5deg);
+  transform-origin: 100%;
+  z-index: 15;
 }
 
 @media (min-width: 992px) {
@@ -512,6 +520,7 @@ img{
   .navbar-nav>li>a {
     padding-top: 50px;
     padding-bottom: 15px;
+    margin:0 15px;
   }
 
   header>.container{
@@ -573,6 +582,9 @@ img{
 }
 
 @media (max-width: 768px){
+  header .header-content{
+    padding-top:100px;
+  }
   .navbar-brand{ 
     padding:3px 10px;
   }
@@ -590,6 +602,9 @@ img{
     width:100%;
     text-align: center;
     padding:10px;
+  }
+  section.features:before {
+    margin-top:-30%;
   }
 }
 
