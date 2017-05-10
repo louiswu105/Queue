@@ -224,7 +224,7 @@ section {
   padding: 100px 0;
 }
 section h2 {
-  font-size: 50px;
+  font-size: 60px;
 }
 section.testimonial {
   padding: 150px 0;
@@ -239,6 +239,16 @@ section.testimonial {
   background: url("../img/bg-pattern.png"), linear-gradient(to top, #FF5B5b, #333);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
+}
+section.testimonial .container{
+  position:relative;
+  z-index:200;
+}
+section.testimonial .wave_content{
+  position:absolute;
+  top:0;
+  left:25%;
+  z-index:100;
 }
 section.download{
   border-top: 1px solid #e0e0e0;
