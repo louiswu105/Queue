@@ -231,30 +231,10 @@ section h2 {
   font-family: 'Lato';
   color: #363636;
 }
-section.testimonial {
-  padding: 150px 0;
-  position: relative;
-  width: 100%;
-  min-height: auto;
-  overflow-y: hidden;
-  background: #1C2A35;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #FF5B5b, #333);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #FF5B5b, #333);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
+section .testimonial {
+  margin-bottom:70px;
 }
-section.testimonial .container{
-  position:relative;
-  z-index:200;
-}
-section.testimonial .wave_content{
-  position:absolute;
-  top:0;
-  left:25%;
-  z-index:100;
-}
+
 section.download{
   border-top: 1px solid #e0e0e0;
   margin-top: 2px;
