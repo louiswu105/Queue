@@ -123,7 +123,10 @@ p {
   .navbar-default .nav > li > a:focus:hover {
     color: white;
   }
-  .navbar-default.affix {
+  #mainNav{
+    position:absolute;
+  }
+/*  .navbar-default.affix {
     background-color: rgba(242, 62, 62, 0.7);
     border-color: rgba(34, 34, 34, 0.1);
   }
@@ -142,7 +145,7 @@ p {
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
     color: #fdcc52;
-  }
+  }*/
 }
 header {
   position: relative;
