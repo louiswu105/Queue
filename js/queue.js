@@ -14,7 +14,7 @@ $( document ).ready(function() {
         duration: 2000,
       },
       strokeWidth: {
-        value: 6,
+        value: 1,
         easing: 'linear',
         delay: function(el, i) { 
           return 1200 + (i * 40); 
