@@ -164,7 +164,7 @@
             $(this).attr('y1', y1 );
         });
         start += step;
-        setTimeout(exploded, 10 );
+        setTimeout(exploded, 50 );
     };
     exploded();
 })(jQuery); // End of use strict
