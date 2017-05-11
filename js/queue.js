@@ -1,3 +1,36 @@
+// $( document ).ready(function() {
+//     anime({
+//       targets: 'path',
+//       strokeDashoffset: function(el) {
+//         var pathLength = el.getTotalLength();
+//         el.setAttribute('stroke-dasharray', pathLength);
+//         return [-pathLength, 0];
+//       },
+//       stroke: {
+//         value: function(el, i) {
+//           return 'rgb(200,'+ i * 8 +',150)'; 
+//         },
+//         easing: 'linear',
+//         duration: 2000,
+//       },
+//       strokeWidth: {
+//         value: 1,
+//         easing: 'linear',
+//         delay: function(el, i) { 
+//           return 1200 + (i * 40); 
+//         },
+//         duration: 800,
+//       },
+//       delay: function(el, i) { 
+//         return i * 60; 
+//       },
+//       duration: 1200,
+//       easing: 'easeOutExpo',
+//       loop: true,
+//       direction: 'alternate'
+//     });
+// });
+
 (function($) {
     "use strict"; // Start of use strict
 
@@ -11,10 +44,10 @@
     });
 
     // Highlight the top nav as scrolling occurs
-    // $('body').scrollspy({
-    //     target: '.navbar-fixed-top',
-    //     offset: 100
-    // });
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 100
+    });
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
@@ -22,11 +55,11 @@
     });
 
     // Offset for Main Navigation
-    // $('#mainNav').affix({
-    //     offset: {
-    //         top: 0
-    //     }
-    // })
+    $('#mainNav').affix({
+        offset: {
+            top: 50
+        }
+    })
 
     $('.contact li').hover(function(){
         $(this).toggleClass('active');
