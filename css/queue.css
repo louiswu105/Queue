@@ -229,6 +229,7 @@ section {
 section h2 {
   font-size: 60px;
   font-family: 'Lato';
+  color: #363636;
 }
 section.testimonial {
   padding: 150px 0;
@@ -278,10 +279,11 @@ section.download .badges .badge-link img {
     display: inline-block;
     margin-bottom: 0;
   }
-}
-@media (min-width: 768px) {
   section.download h2 {
     font-size: 70px;
+  }
+  section.contact{
+    padding-bottom:200px;
   }
 }
 section.features{
@@ -572,11 +574,12 @@ img{
   margin-bottom:150px;
 }
 .parallax .title{
-  font-size:60px;
+  font-size:50px;
   font-weight:bold;
   padding:50px 0;
-  font-family: 'Avenir';
-  font-weight:900;
+  font-family: 'Lato';
+  font-weight:700;
+  color: black;
 }
 .parallax .contents a{
   font-style: italic;
