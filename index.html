@@ -92,50 +92,10 @@
             </div>
         </div>
         <div class="wave_bg" style="position: absolute;bottom: 0;width: 100%;overflow: hidden;">
-            <svg class="wave_content" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            </svg>
+            <svg class="wave_content" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
         </div>
-    
-    </header>
-        <script src="lib/jquery/jquery.min.js"></script>
-        <script>   
-            var number = 400;
-            var max_heihgt = 600;
-            var step = 9;
-            var container_width = $('.wave_bg').width();          
+        </header>
 
-            var el_parent = $('.wave_content');
-            el_parent.attr( "width", container_width );
-            el_parent.attr( "height", max_heihgt );
-            el_parent.attr( "viewBox", '3 11 '+container_width+' '+max_heihgt );
-
-            x1 = -800;
-            deltaY = 0
-            for( i = 0; i < number; i++ )
-            {
-                x1 += step;
-                x2 = x1 + 600;
-
-                y1 = 200 + Math.sin( x1 / 300 + 4 ) * 50;
-                y2 = max_heihgt ;
-                if( x1 > 900 ){
-                    y2 = max_heihgt - ( deltaY );
-                    y1 = y1 - ( max_heihgt - y2 );
-                    deltaY++;
-                }
-
-                boardElement = document.createElementNS("http://www.w3.org/2000/svg", "line");
-                boardElement.setAttribute('stroke-dasharray', '0,0');
-                boardElement.setAttribute('stroke', '#AAAAAA');
-                boardElement.setAttribute('stroke-width', '1');
-                boardElement.setAttribute('x1', x1);
-                boardElement.setAttribute('y1', y1);
-                boardElement.setAttribute('x2', x2);
-                boardElement.setAttribute('y2', y2 );
-                boardElement.style.opacity = 0.5;
-                el_parent.append(boardElement);
-            }
-        </script>
     <section id="features" class="features">
         <div class="container">
             <div class="row parallax">
@@ -279,6 +239,7 @@
     </footer>
 
     <!-- jQuery -->
+    <script src="lib/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>

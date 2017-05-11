@@ -156,15 +156,56 @@
 
     enableParallax.init();
 
-    var start = 4; step = 0.1;
+    function generate_header_bg(){
+        var max_heihgt = 600;
+        var step = 9;
+        var container_width = $('.wave_bg').width();          
+        var number = ( container_width + 800 ) /step;
+
+        var el_parent = $('.wave_content');
+        el_parent.html('');
+        el_parent.attr( "width", container_width );
+        el_parent.attr( "height", max_heihgt );
+        el_parent.attr( "viewBox", '3 11 '+container_width+' '+max_heihgt );
+
+        var x1 = -800, deltaY = 0;
+        for( var i = 0; i < number; i++ )
+        {
+            x1 += step;
+            var x2 = x1 + 600;
+
+            var y1 = 200 + Math.sin( x1 / 300 + 4 ) * 50;
+            var y2 = max_heihgt ;
+            if( x1 > 900 ){
+                y2 = max_heihgt - ( deltaY );
+                y1 = y1 - ( max_heihgt - y2 );
+                deltaY++;
+            }
+            var boardElement;
+            boardElement = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            boardElement.setAttribute('stroke-dasharray', '0,0');
+            boardElement.setAttribute('stroke', '#AAAAAA');
+            boardElement.setAttribute('stroke-width', '1');
+            boardElement.setAttribute('x1', x1);
+            boardElement.setAttribute('y1', y1);
+            boardElement.setAttribute('x2', x2);
+            boardElement.setAttribute('y2', y2 );
+            boardElement.style.opacity = 0.5;
+            el_parent.append(boardElement);
+        }
+    }
+    $( window ).resize( function(){ generate_header_bg() });
+
+    var start = 4, step = 0.1;
     function exploded(){
         $('line').each(function(){
-            x1 = $(this).attr('x1');
-            y1 = 200 + Math.sin( x1 / 300 + (start + step) ) * 50;
+            var x1 = $(this).attr('x1');
+            var y1 = 200 + Math.sin( x1 / 300 + (start + step) ) * 50;
             $(this).attr('y1', y1 );
         });
         start += step;
         setTimeout(exploded, 50 );
     };
     exploded();
+    generate_header_bg();
 })(jQuery); // End of use strict
