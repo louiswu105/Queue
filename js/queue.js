@@ -1,35 +1,35 @@
-$( document ).ready(function() {
-    anime({
-      targets: 'path',
-      strokeDashoffset: function(el) {
-        var pathLength = el.getTotalLength();
-        el.setAttribute('stroke-dasharray', pathLength);
-        return [-pathLength, 0];
-      },
-      stroke: {
-        value: function(el, i) {
-          return 'rgb(200,'+ i * 8 +',150)'; 
-        },
-        easing: 'linear',
-        duration: 2000,
-      },
-      strokeWidth: {
-        value: 1,
-        easing: 'linear',
-        delay: function(el, i) { 
-          return 1200 + (i * 40); 
-        },
-        duration: 800,
-      },
-      delay: function(el, i) { 
-        return i * 60; 
-      },
-      duration: 1200,
-      easing: 'easeOutExpo',
-      loop: true,
-      direction: 'alternate'
-    });
-});
+// $( document ).ready(function() {
+//     anime({
+//       targets: 'path',
+//       strokeDashoffset: function(el) {
+//         var pathLength = el.getTotalLength();
+//         el.setAttribute('stroke-dasharray', pathLength);
+//         return [-pathLength, 0];
+//       },
+//       stroke: {
+//         value: function(el, i) {
+//           return 'rgb(200,'+ i * 8 +',150)'; 
+//         },
+//         easing: 'linear',
+//         duration: 2000,
+//       },
+//       strokeWidth: {
+//         value: 1,
+//         easing: 'linear',
+//         delay: function(el, i) { 
+//           return 1200 + (i * 40); 
+//         },
+//         duration: 800,
+//       },
+//       delay: function(el, i) { 
+//         return i * 60; 
+//       },
+//       duration: 1200,
+//       easing: 'easeOutExpo',
+//       loop: true,
+//       direction: 'alternate'
+//     });
+// });
 
 (function($) {
     "use strict"; // Start of use strict
@@ -155,4 +155,16 @@ $( document ).ready(function() {
     };
 
     enableParallax.init();
+
+    var start = 4; step = 0.1;
+    function exploded(){
+        $('line').each(function(){
+            x1 = $(this).attr('x1');
+            y1 = 200 + Math.sin( x1 / 300 + (start + step) ) * 50;
+            $(this).attr('y1', y1 );
+        });
+        start += step;
+        setTimeout(exploded, 10 );
+    };
+    exploded();
 })(jQuery); // End of use strict
