@@ -87,8 +87,8 @@ img{
   font-weight: 200;
   letter-spacing: 1px;
   color: #fdcc52;
-  height:50px; 
-  padding:3px 10px;
+  height: 50px; 
+  padding: 3px 10px;
 }
 .navbar-default .navbar-header .navbar-brand img{ max-height:100%; }
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -105,13 +105,13 @@ img{
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
   color: #222222;
   padding-top: 15px;
-  margin:0 40px;
+  margin: 0 30px;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
@@ -128,7 +128,7 @@ img{
   }
   .navbar-default .navbar-header .navbar-brand {
     padding-top: 23px;
-    height: 87px;
+    height: 150px;
   }
   .navbar-default .navbar-header .navbar-brand:hover,
   .navbar-default .navbar-header .navbar-brand:focus {
@@ -151,11 +151,11 @@ img{
     display: none;
   }
   .navbar-default.affix img.logo_red{
-    display:block;
+    display: block;
   }
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: #222222;
     padding: 0px 15px;
+    height: 87px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
@@ -172,7 +172,7 @@ img{
 }
 @media( max-width: 768px){
   .navbar-default img.logo{
-    display:none;
+    display: none;
   }
 }
 @media( max-width: 992px){
@@ -210,7 +210,7 @@ header .header-content .header-content-inner h1 {
   margin-top: 0;
   margin-bottom: 30px;
   font-size: 40px;
-  font-weight:700;
+  font-weight: 700;
 }
 header .header-content .header-content-inner h2 {
   font-size: 28px;
@@ -288,10 +288,6 @@ header .header-content .header-content-inner .its_free .btn{
     letter-spacing: 0.5px;
   }
 }
-@media (min-width: 1200px){
-  .navbar-default{
-  }
-}
 /* -- header -- */
 section {
   padding: 100px 0;
@@ -309,10 +305,10 @@ section.download{
   border-bottom: 1px solid #e0e0e0;
 }
 section.download .testimonial {
-  margin-bottom:70px;
+  margin-bottom: 70px;
 }
 section.download p {
-  margin-top:40px;
+  margin-top: 40px;
   font-size: 18px;
 }
 section.download .badges .badge-link {
@@ -334,13 +330,13 @@ section.download .badges .badge-link img {
     font-size: 70px;
   }
   section.contact{
-    padding-bottom:200px;
+    padding-bottom: 200px;
   }
 }
 /* -- download -- */
 section.features{
-  position:relative;
-  padding:0;
+  position: relative;
+  padding: 0;
 }
 section.features .section-heading {
   margin-bottom: 100px;
@@ -354,8 +350,8 @@ section.features .section-heading p {
 
 header .container, section.features .container{ z-index:500; position:relative;}
 section.features{
-  background:white;
-  z-index:150;
+  background: white;
+  z-index: 150;
   position: relative;
 }
 section.features:before {
@@ -391,23 +387,23 @@ section.features .row{
   margin-bottom: 100px;
 }
 section.features .row .title{
-  font-size:50px;
-  font-weight:bold;
-  padding:50px 0;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 50px 0;
   font-family: 'Lato';
-  font-weight:700;
+  font-weight: 700;
   color: black;
 }
 section.features .row .contents a{
   font-style: italic;
-  color:black;
+  color: black;
   font-size: 22px;
-  font-weight:bold;
+  font-weight: bold;
 }
 @media (min-width: 768px){
   section.features .row .title{
-    margin-top:150px;
-    font-size:60px;
+    margin-top: 150px;
+    font-size: 60px;
   }
 }
 @media (max-width: 768px){
@@ -430,14 +426,14 @@ section.contact h2 {
   margin-top: 0;
   margin-bottom: 25px;
   font-family: 'Lato';
-  font-weight:bold;
+  font-weight: bold;
 }
 section.contact h3{
-  font-size:18px;
-  color:#808080;
-  margin-top:0;
+  font-size: 18px;
+  color: #808080;
+  margin-top: 0;
   letter-spacing: 0.1px;
-  line-height:32px;
+  line-height: 32px;
 }
 
 section.contact ul.list-member {
@@ -447,28 +443,28 @@ section.contact ul.list-member .wrapper{
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-  margin-top:30px;
+  margin-top: 30px;
 }
 section.contact ul.list-member .active .wrapper{
-  margin-top:0px;
+  margin-top: 0px;
 }
 section.contact ul.list-member .active .arrow{ 
     border-top: 15px solid white;
 }
 
 section.contact ul.list-member .description{
-  border:1px solid #e0e0e0;
-  padding:30px;
-  text-align:left;
+  border: 1px solid #e0e0e0;
+  padding: 30px;
+  text-align: left;
 }
 section.contact ul.list-member .active .description{
-  border-width:0;
+  border-width: 0;
   box-shadow: 2px 20px 20px 11px rgba(220, 220, 220, 0.5)
 }
 
 section.contact ul.list-member .arrow{ 
     margin-left: 7%;
-    margin-top:-1px;
+    margin-top: -1px;
     width: 0;
     height: 0;
     border-top: 15px solid #e0e0e0;
@@ -486,35 +482,35 @@ section.contact ul.list-member .arrow div{
     border-right: 13px solid transparent; 
 }
 section.contact ul.list-member .description a{
-  color:red;
-  font-weight:bold;
+  color: red;
+  font-weight: bold;
 }
 section.contact ul.list-member .active .profile{
-  margin-top:52px;
+  margin-top: 52px;
 }
 section.contact ul.list-member .profile{
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;  
-  margin-top:20px;
+  margin-top: 20px;
   text-align: left;
 }
 section.contact ul.list-member .profile .member_avatar{
-  float:left;
+  float: left;
 }
 section.contact ul.list-member .profile .member_avatar img{
   border-radius:50%;
   width:60px; height:60px;
 }
 section.contact ul.list-member .profile .member_name{
-  color:#363636;
-  font-size:18px;
-  margin-left:80px;
+  color: #363636;
+  font-size: 18px;
+  margin-left: 80px;
 }
 section.contact ul.list-member .profile .role{
-  color:#667386;
-  font-size:16px;
-  margin-left:80px;
+  color: #667386;
+  font-size: 16px;
+  margin-left: 80px;
   text-transform: uppercase;
 }
 /* -- contact -- */
@@ -562,25 +558,25 @@ footer ul li a.active {
 
 @media (min-width: 768px){
   .spotify_img{ 
-    margin-left:60px; 
-    margin-top:40px;
+    margin-left: 60px; 
+    margin-top: 40px;
   }
   footer .copyright{
-    padding-top:17px;
-    margin-right:30px;
+    padding-top: 17px;
+    margin-right: 30px;
   }
   footer .copyright span{
-    float:left;
+    float: left;
   } 
   footer .copyright img{
-    margin-top:10px;
-    margin-right:20px;
+    margin-top: 10px;
+    margin-right: 20px;
   }
   footer .copyright span{
-    line-height:30px;
+    line-height: 30px;
   }
   footer ul{
-    width:65%;
+    width: 65%;
   }
   footer ul li a {
     font-size:14px;
