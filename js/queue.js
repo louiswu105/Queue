@@ -124,7 +124,7 @@
     enableParallax.init();
 
     function generate_header_bg(){
-        var max_heihgt = 600;
+        var max_heihgt = 700;
         var step = 9;
         var container_width = $('.wave_bg').width();          
         var number = ( container_width + 800 ) /step;
@@ -144,8 +144,8 @@
             var y1 = 200 + Math.sin( x1 / 300 + 4 ) * 50;
             var y2 = max_heihgt ;
             if( x1 > 900 ){
-                y2 = max_heihgt - ( deltaY );
-                y1 = y1 - ( max_heihgt - y2 );
+                // y2 = max_heihgt - ( deltaY );
+                // y1 = y1 - ( max_heihgt - y2 );
                 deltaY++;
             }
             var boardElement;
@@ -156,7 +156,7 @@
             boardElement.setAttribute('x1', x1);
             boardElement.setAttribute('y1', y1);
             boardElement.setAttribute('x2', x2);
-            boardElement.setAttribute('y2', y2 );
+            boardElement.setAttribute('y2', y2);
             boardElement.style.opacity = 0.5;
             el_parent.append(boardElement);
         }
