@@ -350,13 +350,13 @@ section.features{
   z-index: 150;
   position: relative;
 }
-section.features:before {
+section#features:before {
   margin-top:-10%;
   top:0;
   background: inherit;
   content: '';
   display: block;
-  height: 100%;
+  height: 50%;
   left: 0;
   position: absolute;
   right: 0;
@@ -403,7 +403,7 @@ section.features .row .contents a{
   }
 }
 @media (max-width: 768px){
-  section.features:before {
+  section#features:before {
     margin-top: -30%;
   }
   section.features .row .title{
@@ -649,10 +649,16 @@ body {
   }
 }
 /* Host Page */
+#hostpage p{
+  font-size: 18px;
+  line-height:30px;
+}
+#hostpage ul{
+  list-style: none;
+  padding-left: 0;
+}
 #hostpage header{
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #FF5B5b, #192934);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #FF5B5b, #192934);
 }
 #hostpage header .header-content{ 
@@ -668,12 +674,43 @@ body {
   line-height: 42px;
 }
 header .device-container img{
-  margin :100px auto;
+  margin :100px auto 0;
 }
-#hostpage section.features:before{
+#hostpage section#features:before{
   margin-top: -20%;
+  height:100%;
   transform: none;
 }
-#hostpage section.features .row{
-  text-align:center;
+#hostpage section.features .row .col-md-4{
+  text-align: center;
+  padding: 50px 0 0;
+}
+#hostpage section.features .row h4{
+  font-size: 24px;
+  line-height: 40px;
+  margin-top: 50px;
+  color: #263a47;
+}
+#hostpage section.features .row p{
+  color: #8492af;
+}
+#hostpage section.features .row .title{
+  margin-top: 0;
+}
+#hostpage section.features ul{
+  color: #5584ff;
+  font-size:22px;
+  padding: 30px 0;
+  line-height: 32px;
+}
+#hostpage section.features ul li{
+  background: url('../img/check_icon.png') no-repeat;
+  padding-left: 42px;
+  margin: 30px 0;
+}
+#hostpage section.features .device_image
+{
+  position: absolute;
+  right: 0;
+  padding-right: 0;
 }
