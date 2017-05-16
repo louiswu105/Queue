@@ -59,7 +59,7 @@
 
     var enableParallax =
     {
-        parallaxSelector: '.parallax img',
+        parallaxSelector: '.parallax .col-sm-5 .prallax_img',
         ratioDefault: 6,
         
         init: function() {
