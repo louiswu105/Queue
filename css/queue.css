@@ -196,6 +196,12 @@ header {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
+header .wave_bg{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
 header .header-content {
   text-align: center;
   padding: 80px 0 50px;
@@ -673,7 +679,7 @@ body {
   font-size: 36px;
   line-height: 42px;
 }
-header .device-container img{
+header .device-container img, header .device-container video{
   margin :100px auto 0;
 }
 #hostpage section#features:before{
