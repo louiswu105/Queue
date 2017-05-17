@@ -175,4 +175,9 @@
     };
     exploded();
     generate_header_bg();
+
+    /* disable auto slider on host page */
+    $('.carousel').carousel({
+        interval: false
+    });
 })(jQuery); // End of use strict
