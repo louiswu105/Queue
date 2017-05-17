@@ -59,8 +59,8 @@
 
     var enableParallax =
     {
-        parallaxSelector: '.parallax .col-sm-5 .prallax_img',
-        ratioDefault: 6,
+        parallaxSelector: '.prallax_img',
+        ratioDefault: 10,
         
         init: function() {
             // enanble only if parallax selector exists
