@@ -68,6 +68,7 @@ span.red_dot{
 }
 img{
   max-width:100%;
+  margin: 0 auto;
 }
 
 /* navbar */
@@ -213,10 +214,10 @@ header .header-content .header-content-inner {
   margin: 0 auto;
 }
 header .header-content .header-content-inner h1 {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 30px;
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 400;
 }
 header .header-content .header-content-inner h2 {
   font-size: 28px;
@@ -237,12 +238,12 @@ header .header-content .header-content-inner .its_free{
   margin-top: 30px; 
 }
 header .header-content .header-content-inner .its_free .btn{ 
-  padding: 13px 35px;
+  padding: 10px 30px;
   text-transform: none;
   background-color: white;
   color: #e73332;
   border: 0;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 300;
 }
 .its_free .btn:hover,
@@ -256,7 +257,7 @@ header .header-content .header-content-inner .its_free .btn{
 
 @media (min-width: 768px) {
   header {
-    padding-top: 200px;
+    padding-top: 150px;
   }
   header .header-content {
     text-align: left;
@@ -266,9 +267,6 @@ header .header-content .header-content-inner .its_free .btn{
     margin: 0;
   }
 
-  header .header-content .header-content-inner h1 {
-    font-size: 65px;
-  }
   header .header-content .header-content-inner h2 {
     font-size: 28px;
   }
@@ -277,15 +275,15 @@ header .header-content .header-content-inner .its_free .btn{
     max-width: none;
   }
   header .header-content .header-content-inner .its_free{ 
-    margin-top: 60px; 
+    margin-top: 45px; 
   }
 }
 @media ( min-width: 768px ) and (max-width: 992px) {
   header .header-content .header-content-inner h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   header .header-content .header-content-inner h2 {
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0.5px;
   }
 }
@@ -304,7 +302,7 @@ section.download{
   border-top: 1px solid #e0e0e0;
   margin-top: 2px;
   border-bottom: 1px solid #e0e0e0;
-  padding: 70px 0;
+  /*padding: 70px 0;*/
 }
 section.download .testimonial {
   margin-bottom: 20px;
@@ -392,7 +390,7 @@ section.features .row{
 section.features .row .title{
   font-size: 50px;
   font-weight: bold;
-  padding: 50px 0;
+  padding: 30px 0 30px;
   font-family: 'Lato';
   font-weight: 700;
   color: black;
@@ -405,8 +403,8 @@ section.features .row .contents a{
 }
 @media (min-width: 768px){
   section.features .row .title{
-    margin-top: 150px;
-    font-size: 60px;
+    margin-top: 100px;
+    font-size: 50px;
   }
 }
 @media (max-width: 768px){
@@ -657,7 +655,7 @@ body {
 /* Host Page */
 #hostpage p{
   font-size: 14px;
-  line-height:30px;
+  line-height:25px;
 }
 #hostpage ul{
   list-style: none;
@@ -676,22 +674,25 @@ body {
 }
 #hostpage header .header-content .header-content-inner h2 {
   color: #8492af;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 33px;
 }
 #hostpage section#features:before{
-  margin-top: -15%;
-  height:120%;
+  margin-top: -10%;
+  height:100%;
   transform: none;
+}
+#hostpage section.features .row{
+  margin-bottom: 20px;
 }
 #hostpage section.features .row .col-md-4{
   text-align: center;
-  padding: 50px 30px 0;
+  padding: 40px 40px 0;
 }
 #hostpage section.features .row h4{
-  font-size: 24px;
-  line-height: 40px;
-  margin-top: 50px;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 35px;
   color: #263a47;
 }
 #hostpage section.features .row p{
@@ -702,14 +703,14 @@ body {
 }
 #hostpage section.features ul.check_list{
   color: #5584ff;
-  font-size:22px;
-  padding: 30px 0;
-  line-height: 32px;
+  font-size: 18px;
+  padding: 5px 0;
+  line-height: 25px;
 }
 #hostpage section.features ul.check_list li{
   background: url('../img/check_icon.png') no-repeat;
   padding-left: 42px;
-  margin: 30px 0;
+  margin: 15px 0;
 }
 #hostpage section.features .device_image{
   
@@ -744,22 +745,22 @@ body {
 /* Host page Slider */
 #hostpage #featured_slider{
   background: #263A47;
-  padding: 150px 0 120px;
+  padding: 120px 0 100px;
 }
 #hostpage #featured_slider .item .title{
   color: white;
-  font-size: 40px;
-  padding:30px 0;
+  font-size: 30px;
+  padding:20px 0;
 }
 #hostpage #featured_slider .item p{
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 14px;
+  line-height: 20px;
   color: white;
 }
 #hostpage #featured_slider .carousel-control{
   background: none;
   position: relative;
   float: left;
-  width: 12%;
+  width: 10%;
   margin-top: 10px;
 }

@@ -32,7 +32,7 @@
         $(this).toggleClass('active');
         // $(this).find('.description').height( $(this).find('.description').height() + 20 );
     });
-
+/*
     var isMobile = {
         Android: function() {
             return navigator.userAgent.match(/Android/i);
@@ -59,8 +59,8 @@
 
     var enableParallax =
     {
-        parallaxSelector: '.prallax_img',
-        ratioDefault: 10,
+        parallaxSelector: '.parallax_img',
+        ratioDefault: 2,
         
         init: function() {
             // enanble only if parallax selector exists
@@ -122,7 +122,7 @@
     };
 
     enableParallax.init();
-
+/*
     function generate_header_bg(){
         var max_heihgt = 700;
         var step = 12;
