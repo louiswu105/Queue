@@ -535,7 +535,6 @@ footer ul li a {
   font-size: 18px;
   color: #363636;
   opacity: 0.9;
-  padding: 40px;
 }
 footer ul li a:hover,
 footer ul li a:focus,
@@ -679,9 +678,6 @@ body {
   font-size: 36px;
   line-height: 42px;
 }
-header .device-container img, header .device-container video{
-  margin :70px auto 0;
-}
 #hostpage section#features:before{
   margin-top: -15%;
   height:120%;
@@ -730,10 +726,18 @@ header .device-container img, header .device-container video{
   text-transform: none;
 }
 #hostpage footer .copyright{
-  padding-top: 35px;
+  padding: 35px 0 25px;
 }
 #hostpage footer .copyright, #hostpage footer ul li a{ 
   color: #8492af;
+}
+#hostpage footer ul{
+  width: auto;
+}
+@media (max-width: 768px) {
+  #hostpage footer ul{
+    width: 100%;
+  }
 }
 /* Host page Slider */
 #hostpage #featured_slider{

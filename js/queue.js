@@ -125,7 +125,7 @@
 
     function generate_header_bg(){
         var max_heihgt = 700;
-        var step = 9;
+        var step = 12;
         var container_width = $('.wave_bg').width();          
         var number = ( container_width + 800 ) /step;
 
@@ -141,7 +141,7 @@
             x1 += step;
             var x2 = x1 + 600;
 
-            var y1 = 200 + Math.sin( x1 / 300 + 4 ) * 50;
+            var y1 = 300 + Math.sin( x1 / 300 + 4 ) * 80;
             var y2 = max_heihgt ;
             if( x1 > 900 ){
                 // y2 = max_heihgt - ( deltaY );
@@ -162,19 +162,19 @@
         }
     }
     $( window ).resize( function(){ generate_header_bg() });
+    generate_header_bg();
 
     var start = 4, step = 0.1;
     function exploded(){
         $('line').each(function(){
             var x1 = $(this).attr('x1');
-            var y1 = 200 + Math.sin( x1 / 300 + (start + step) ) * 50;
+            var y1 = 300 + Math.sin( x1 / 300 + (start + step) ) * 80;
             $(this).attr('y1', y1 );
         });
         start += step;
         setTimeout(exploded, 50 );
     };
     exploded();
-    generate_header_bg();
 
     /* disable auto slider on host page */
     $('.carousel').carousel({
