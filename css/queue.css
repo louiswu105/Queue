@@ -725,6 +725,16 @@ header .device-container img, header .device-container video{
     top: 0;
   }
 }
+#hostpage footer{ 
+  background-color: #15232c;
+  text-transform: none;
+}
+#hostpage footer .copyright{
+  padding-top: 35px;
+}
+#hostpage footer .copyright, #hostpage footer ul li a{ 
+  color: #8492af;
+}
 /* Host page Slider */
 #hostpage #featured_slider{
   background: #263A47;
@@ -744,6 +754,6 @@ header .device-container img, header .device-container video{
   background: none;
   position: relative;
   float: left;
-  width: 10%;
+  width: 12%;
   margin-top: 10px;
 }
