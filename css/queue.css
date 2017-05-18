@@ -304,17 +304,18 @@ section.download{
   border-top: 1px solid #e0e0e0;
   margin-top: 2px;
   border-bottom: 1px solid #e0e0e0;
+  padding: 70px 0;
 }
 section.download .testimonial {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 section.download p {
-  margin-top: 40px;
-  font-size: 18px;
+  margin-top: 20px;
+  font-size: 14px;
 }
 section.download .badges .badge-link {
   display: block;
-  margin: 60px 30px;
+  margin: 37px 20px;
 }
 section.download .badges .badge-link:last-child {
   margin-bottom: 0;
@@ -329,7 +330,7 @@ section.download .badges .badge-link img {
     margin-bottom: 0;
   }
   section.download h2 {
-    font-size: 70px;
+    font-size: 50px;
   }
   section.contact{
     padding-bottom: 200px;
@@ -655,7 +656,7 @@ body {
 }
 /* Host Page */
 #hostpage p{
-  font-size: 18px;
+  font-size: 14px;
   line-height:30px;
 }
 #hostpage ul{
@@ -719,6 +720,7 @@ body {
     padding-right: 0;
     right: 0;
     top: 0;
+    overflow: hidden;
   }
 }
 #hostpage footer{ 

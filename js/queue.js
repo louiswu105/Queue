@@ -180,4 +180,20 @@
     $('.carousel').carousel({
         interval: false
     });
+
+    $('.scroll_fade img').css('margin-left', '100%')
+    $(window).scroll( function(){
+        /* Check the location of each desired element */
+        $('.scroll_fade img').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/2;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'margin-left':'0'},1000);
+            }
+            
+        }); 
+    
+    });
+
 })(jQuery); // End of use strict
