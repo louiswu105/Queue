@@ -304,7 +304,7 @@
 /* iPhone 6 Plus*/
 .device-mockup.iphone6_plus,
 .device-mockup.iphone6_plus.portrait {
-	padding-bottom: 201.76%;
+	padding-bottom: 171.65%;
 }
 
 .device-mockup.iphone6_plus.landscape {
@@ -342,7 +342,7 @@
 
 .device-mockup.iphone6_plus > .device > .screen,
 .device-mockup.iphone6_plus.portrait > .device > .screen {
-    top: 11.74%; bottom: 14.23%; left: 6.8%; right: 7.1%;
+    top: 11.1%; bottom: 17.3%; left: 14%; right: 17.2%;
 }
 
 .device-mockup.iphone6_plus.landscape > .device > .screen {
