@@ -60,7 +60,7 @@
     var enableParallax =
     {
         parallaxSelector: '.parallax_img',
-        ratioDefault: 2,
+        ratioDefault: 10,
         
         init: function() {
             // enanble only if parallax selector exists
