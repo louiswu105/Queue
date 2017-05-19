@@ -32,7 +32,7 @@
         $(this).toggleClass('active');
         // $(this).find('.description').height( $(this).find('.description').height() + 20 );
     });
-/*
+
     var isMobile = {
         Android: function() {
             return navigator.userAgent.match(/Android/i);
@@ -122,7 +122,7 @@
     };
 
     enableParallax.init();
-/*
+
     function generate_header_bg(){
         var max_heihgt = 700;
         var step = 12;
