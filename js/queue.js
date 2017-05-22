@@ -123,54 +123,6 @@
 
     enableParallax.init();
 
-    /*function generate_header_bg(){
-        var max_heihgt = 700;
-        var step = 12;
-        var container_width = $('.wave_bg').width();          
-        var number = ( container_width + 800 ) /step;
-
-        var el_parent = $('.wave_content');
-        el_parent.html('');
-        el_parent.attr( "width", container_width );
-        el_parent.attr( "height", max_heihgt );
-        el_parent.attr( "viewBox", '3 11 '+container_width+' '+max_heihgt );
-
-        var x1 = 0, deltaY = 0;
-        for( var i = 0; i < number; i++ )
-        {
-            x1 += step;
-            var x2 = x1 ;
-
-            var y1 = 300 + Math.sin( x1 / 300 + 4 ) * 80;
-            var y2 = max_heihgt ;
-            var boardElement;
-            boardElement = document.createElementNS("http://www.w3.org/2000/svg", "line");
-            boardElement.setAttribute('stroke-dasharray', '0,0');
-            boardElement.setAttribute('stroke', '#AAAAAA');
-            boardElement.setAttribute('stroke-width', '1');
-            boardElement.setAttribute('x1', x1);
-            boardElement.setAttribute('y1', y1);
-            boardElement.setAttribute('x2', x2);
-            boardElement.setAttribute('y2', y2);
-            boardElement.style.opacity = 0.5;
-            el_parent.append(boardElement);
-        }
-    }
-    $( window ).resize( function(){ generate_header_bg() });
-    generate_header_bg();
-
-    var start = 4, step = 0.1;
-    function exploded(){
-        $('line').each(function(){
-            var x1 = $(this).attr('x1');
-            var y1 = 300 + Math.sin( x1 / 300 + (start + step) ) * 80;
-            $(this).attr('y1', y1 );
-        });
-        start += step;
-        // setTimeout(exploded, 50 );
-    };
-    exploded();
-
     /* disable auto slider on host page */
     $('.carousel').carousel({
         interval: false
@@ -248,6 +200,7 @@
         context.save();
         context.strokeStyle = '#AAAAAA';
         context.fillStyle = '#fff';
+        context.globalAlpha = '0.4';
         context.lineWidth = 1;
 
         // Draw the sine curve at time draw.t, as well as the circle.
