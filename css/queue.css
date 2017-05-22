@@ -729,9 +729,15 @@ body {
 #hostpage footer ul{
   width: auto;
 }
+#hostpage #powerful .contents{
+  padding-right:30px;
+}
 @media (max-width: 768px) {
   #hostpage footer ul{
     width: 100%;
+  }
+  #hostpage #powerful .contents{
+    padding-right:0px;
   }
 }
 /* Host page Slider */
@@ -767,6 +773,7 @@ body {
   }
 }
 
-#hostpage #powerful .contents{
-  padding-right:30px;
+.wave_content{
+  opacity: 0.5;
 }
+

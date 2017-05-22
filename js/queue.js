@@ -123,7 +123,7 @@
 
     enableParallax.init();
 
-    function generate_header_bg(){
+    /*function generate_header_bg(){
         var max_heihgt = 700;
         var step = 12;
         var container_width = $('.wave_bg').width();          
@@ -135,19 +135,14 @@
         el_parent.attr( "height", max_heihgt );
         el_parent.attr( "viewBox", '3 11 '+container_width+' '+max_heihgt );
 
-        var x1 = -800, deltaY = 0;
+        var x1 = 0, deltaY = 0;
         for( var i = 0; i < number; i++ )
         {
             x1 += step;
-            var x2 = x1 + 600;
+            var x2 = x1 ;
 
             var y1 = 300 + Math.sin( x1 / 300 + 4 ) * 80;
             var y2 = max_heihgt ;
-            if( x1 > 900 ){
-                // y2 = max_heihgt - ( deltaY );
-                // y1 = y1 - ( max_heihgt - y2 );
-                deltaY++;
-            }
             var boardElement;
             boardElement = document.createElementNS("http://www.w3.org/2000/svg", "line");
             boardElement.setAttribute('stroke-dasharray', '0,0');
@@ -172,7 +167,7 @@
             $(this).attr('y1', y1 );
         });
         start += step;
-        setTimeout(exploded, 50 );
+        // setTimeout(exploded, 50 );
     };
     exploded();
 
@@ -197,3 +192,103 @@
     });
 
 })(jQuery); // End of use strict
+
+// Draw header background
+(function () {
+
+    if (typeof(Humble) == 'undefined') window.Humble = {};
+    Humble.Trig = {};
+    Humble.Trig.init = init;
+
+    var unit = 80,
+        canvas, context, canvas2, context2,
+        height, width, xAxis, yAxis,
+        draw;
+
+    /**
+     * Init function.
+     * 
+     * Initialize variables and begin the animation.
+     */
+    function init() {
+        
+        canvas = document.getElementById("sineCanvas");
+        
+        canvas.width = window.innerWidth;
+        canvas.height = 700;
+        
+        context = canvas.getContext("2d");
+        context.font = '18px sans-serif';
+        context.lineJoin = 'round';
+        
+        height = canvas.height;
+        width = canvas.width;
+        
+        xAxis = 500;
+        yAxis = 300;
+        
+        context.save();
+        draw();
+        draw.seconds = 0;
+        draw.t = 0;
+    }
+
+    /**
+     * Draw animation function.
+     * 
+     * This function draws one frame of the animation, waits 20ms, and then calls
+     * itself again.
+     */
+    draw = function () {
+        
+        // Clear the canvas
+        context.clearRect(0, 0, width, height);
+
+        // Draw the axes in their own path
+        
+        // Set styles for animated graphics
+        context.save();
+        context.strokeStyle = '#AAAAAA';
+        context.fillStyle = '#fff';
+        context.lineWidth = 1;
+
+        // Draw the sine curve at time draw.t, as well as the circle.
+        context.beginPath();
+        drawSine(draw.t);
+        context.stroke();
+
+            // Restore original styles
+        context.restore();
+        
+        // Update the time and draw again
+        draw.seconds = draw.seconds - .007;
+        draw.t = draw.seconds*Math.PI;
+        setTimeout(draw, 50);
+    };
+    draw.seconds = 0;
+    draw.t = 0;
+
+    /**
+     * Function to draw sine
+     * 
+     * The sine curve is drawn in 10px segments starting at the origin. 
+     */
+    function drawSine(t) {
+
+        // Set the initial x and y, starting at 0,0 and translating to the origin on
+        // the canvas.
+        var x = t;
+        var y = Math.sin(x);
+        
+        // Loop to draw segments
+        for (i = 0; i <= width + xAxis; i += 12) {
+            y= Math.sin( i / 300 + t ) * unit;
+            context.moveTo(i, 700);
+            context.lineTo(i - xAxis, y+yAxis);
+        }
+    }
+
+
+    Humble.Trig.init()
+    $( window ).resize( function(){ Humble.Trig.init() });
+})();
