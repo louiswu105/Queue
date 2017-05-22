@@ -654,8 +654,10 @@ body {
   padding-left: 0;
 }
 #hostpage header{
-  background: -webkit-linear-gradient(to top, #FF5B5b, #192934);
-  background: linear-gradient(to top, #FF5B5b, #192934);
+  background-image: url('../img/header_bg.png'), -webkit-linear-gradient(to top, #FF5B5b, #192934);
+  background-image: url('../img/header_bg.png'), linear-gradient(to top, #FF5B5b, #192934);
+  background-size: 100% 100%;
+  background-position: center center;
 }
 #hostpage header .header-content{ 
   text-align: center; 

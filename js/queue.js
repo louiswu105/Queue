@@ -203,7 +203,7 @@
     var unit = 80,
         canvas, context, canvas2, context2,
         height, width, xAxis, yAxis,
-        draw;
+        draw, timer;
 
     /**
      * Init function.
@@ -228,9 +228,9 @@
         yAxis = 300;
         
         context.save();
-        draw();
         draw.seconds = 0;
         draw.t = 0;
+        draw();
     }
 
     /**
@@ -244,8 +244,6 @@
         // Clear the canvas
         context.clearRect(0, 0, width, height);
 
-        // Draw the axes in their own path
-        
         // Set styles for animated graphics
         context.save();
         context.strokeStyle = '#AAAAAA';
@@ -257,13 +255,13 @@
         drawSine(draw.t);
         context.stroke();
 
-            // Restore original styles
+        // Restore original styles
         context.restore();
         
         // Update the time and draw again
         draw.seconds = draw.seconds - .007;
         draw.t = draw.seconds*Math.PI;
-        setTimeout(draw, 50);
+        timer = setTimeout(draw, 50);
     };
     draw.seconds = 0;
     draw.t = 0;
@@ -275,8 +273,6 @@
      */
     function drawSine(t) {
 
-        // Set the initial x and y, starting at 0,0 and translating to the origin on
-        // the canvas.
         var x = t;
         var y = Math.sin(x);
         
@@ -288,7 +284,6 @@
         }
     }
 
-
     Humble.Trig.init()
-    $( window ).resize( function(){ Humble.Trig.init() });
+    $( window ).resize( function(){ clearTimeout(timer); Humble.Trig.init() });
 })();
