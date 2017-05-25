@@ -168,7 +168,7 @@ img{
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #fdcc52;
+    color: #FF5b5b;
   }
 }
 @media( max-width: 768px){
