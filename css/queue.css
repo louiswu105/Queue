@@ -13,7 +13,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #fcbd20;
+  color: #FF5b5b;
 }
 hr {
   max-width: 100px;
@@ -301,7 +301,6 @@ section h2 {
 section.download{
   border-top: 1px solid #e0e0e0;
   margin-top: 2px;
-  border-bottom: 1px solid #e0e0e0;
   /*padding: 70px 0;*/
 }
 section.download .testimonial {
@@ -510,6 +509,7 @@ section.contact ul.list-member .profile .role{
 /* footer */
 footer {
   text-transform: uppercase;
+  border-top: 1px solid #e0e0e0;
 }
 footer .copyright {
   color: #adadad;
@@ -772,5 +772,51 @@ body {
   #hostpage #featured_slider .item .col-md-6 img{
     float: none !important;
     margin-bottom: 40px;
+  }
+}
+
+/* Support site */
+#supportpage header{
+  padding: 0;
+}
+#supportpage header .title h1{
+  text-align: center;
+  font-size: 50px;
+  padding: 120px 0 70px;
+}
+
+#supportpage section p{
+  font-size: 22px;
+}
+#supportpage section a{
+  color: #FF5b5b;
+}
+#supportpage section .row{
+  margin: 20px 0 10px;
+}
+#supportpage section .btn{
+  border-radius: 4px;
+  font-size: 20px; 
+  padding: 16px 40px;
+  font-weight: 300;
+  font-family: 'Avenir';
+}
+#supportpage section .btn.btn-danger{
+  background-color: #ff5b5b;
+}
+#supportpage section .btn-danger:active, #supportpage section .btn-danger:hover{
+  background-color: #c9302c; 
+}
+#supportpage .form-control{
+  background-color: #F5F5F5;
+  border-width: 0;
+  box-shadow: none;
+  font-size: 20px;
+  height: auto;
+  padding: 10px 20px;
+}
+@media (max-width: 768px) {
+  #supportpage section .btn{
+    width: 100%;
   }
 }

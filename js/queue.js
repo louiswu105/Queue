@@ -165,7 +165,8 @@
     function init() {
         
         canvas = document.getElementById("sineCanvas");
-        
+        if( canvas == "undefined" || canvas == null )
+            return;
         canvas.width = window.innerWidth;
         canvas.height = 700;
         
