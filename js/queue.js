@@ -229,7 +229,7 @@
 
         var x = t;
         var y = Math.sin(x);
-        
+
         // Loop to draw segments
         for (i = 0; i <= width + xAxis; i += 12) {
             y= Math.sin( i / 300 + t ) * unit;
@@ -240,4 +240,11 @@
 
     Humble.Trig.init()
     $( window ).resize( function(){ clearTimeout(timer); Humble.Trig.init() });
+
+    // faq page accourdian
+    $(".expand").on( "click", function() {
+        $(this).next().slideToggle(200);
+        $expand = $(this).find(">:first-child");
+        $(this).parent().toggleClass('active');
+    });
 })();
