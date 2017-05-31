@@ -824,7 +824,7 @@ body {
 /* FAQ Page */
 #integration-list {
     width: 95%;
-    margin: 80px auto;
+    margin: 80px auto 0;
     display: table;
 }
 #integration-list ul {
