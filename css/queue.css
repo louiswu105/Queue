@@ -593,7 +593,7 @@ footer ul li a.active {
   }
   footer ul, footer .copyright{
     width: 100%;
-    padding: 0;
+    padding: 5px 0;
   }
   footer ul li{
     width: 100%;
@@ -835,71 +835,71 @@ body {
 
 /* FAQ Page */
 #integration-list {
-    width: 95%;
-    margin: 80px auto 0;
-    display: table;
+  width: 95%;
+  margin: 80px auto 0;
+  display: table;
 }
 #integration-list ul {
-    padding: 0;
-    margin: 20px 0;
-    color: #555;
+  padding: 0;
+  margin: 20px 0;
+  color: #555;
 }
 #integration-list ul > li {
-    list-style: none;
-    border-top: 1px solid #ecf1f5;
-    display: block;
-    overflow: hidden;
-    padding: 0 20px;
+  list-style: none;
+  border-top: 1px solid #ecf1f5;
+  display: block;
+  overflow: hidden;
+  padding: 0 20px;
 }
 #integration-list ul:last-child {
-    border-bottom: 1px solid #ecf1f5;
+  border-bottom: 1px solid #ecf1f5;
 }
 #integration-list ul > li.active {
-    background: #f9fafb;
+  background: #f9fafb;
 }
 #integration-list .expand {
-    display: block;
-    text-decoration: none;
-    color: #555;
-    cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: #555;
+  cursor: pointer;
 }
 #integration-list .detail {
-    margin: 30px 30px 40px;
-    display: none;
-    height: auto;
+  margin: 30px 30px 40px;
+  display: none;
+  height: auto;
 }
 #integration-list .detail p{
-    line-height: 50px;
-    font-size: 18px;
-    color: #32394d;
+  line-height: 50px;
+  font-size: 18px;
+  color: #32394d;
 }
 #integration-list .right-arrow {
-    margin-top: 17px;
-    margin-left: 40px;
-    width: 18px;
-    height: 10px;
-    float: right;
-    font-weight: bold;
-    font-size: 20px;
-    background-image: url('../img/arrow.png');
-    background-position: 0 10px; 
+  margin-top: 17px;
+  margin-left: 40px;
+  width: 18px;
+  height: 10px;
+  float: right;
+  font-weight: bold;
+  font-size: 20px;
+  background-image: url('../img/arrow.png');
+  background-position: 0 10px; 
 }
 #integration-list .active .right-arrow{
-    background-position: 0 0px; 
+  background-position: 0 0px; 
 }
 
 #integration-list ul > li  h3{
-    font-size: 24px;
-    color: #32394d;
-    padding: 10px;
-    margin: 20px 0;
+  font-size: 24px;
+  color: #32394d;
+  padding: 10px;
+  margin: 20px 0;
 }
 #integration-list ul > li.active h3{
-    font-size: 22px;
-    color: #f95a5a;
+  font-size: 22px;
+  color: #f95a5a;
 }
 #integration-list a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* About Page */
@@ -930,6 +930,8 @@ body {
   width: 100%;
   border-radius: 50%;
   overflow: hidden;
+  max-width: 150px;
+  margin: 0 auto;
 }
 #aboutpage #about h2{
   text-align: center;
@@ -956,4 +958,10 @@ body {
   font-family: 'Lato';
   font-size: 22px;
   letter-spacing: 1.2px;
+}
+@media (max-width: 550px) {
+  #aboutpage header video{
+    width: auto;
+    height: 100%;
+  }
 }
