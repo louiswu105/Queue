@@ -35,7 +35,7 @@ h6 {
   letter-spacing: 1px;
 }
 p {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.5;
   margin-bottom: 20px;
   color:#808080;
@@ -205,7 +205,7 @@ header .wave_bg{
 }
 header .header-content {
   text-align: center;
-  padding: 80px 0 50px;
+  padding: 50px 0 50px;
   position: relative;
 }
 header .header-content .header-content-inner {
@@ -214,9 +214,9 @@ header .header-content .header-content-inner {
   margin: 0 auto;
 }
 header .header-content .header-content-inner h1 {
-  margin-top: 40px;
-  margin-bottom: 30px;
-  font-size: 50px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  font-size: 45px;
   font-weight: 400;
 }
 header .header-content .header-content-inner h2 {
@@ -230,7 +230,7 @@ header .header-content .header-content-inner .list-badges img {
   margin-bottom: 25px;
 }
 header .device-container {
-  /*max-width: 300px;*/
+  max-width: 350px;
   margin: 0 auto;
 }
 
@@ -238,12 +238,12 @@ header .header-content .header-content-inner .its_free{
   margin-top: 30px; 
 }
 header .header-content .header-content-inner .its_free .btn{ 
-  padding: 10px 30px;
+  padding: 8px 25px;
   text-transform: none;
   background-color: white;
   color: #e73332;
   border: 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
 }
 .its_free .btn:hover,
@@ -268,11 +268,11 @@ header .header-content .header-content-inner .its_free .btn{
   }
 
   header .header-content .header-content-inner h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   header .device-container {
-    max-width: none;
+    /*max-width: none;*/
   }
   header .header-content .header-content-inner .its_free{ 
     margin-top: 45px; 
@@ -292,7 +292,7 @@ section {
   padding: 100px 0;
 }
 section h2 {
-  font-size: 50px;
+  font-size: 45px;
   font-family: 'Lato';
   color: #363636;
 }
@@ -301,10 +301,10 @@ section h2 {
 section.download{
   border-top: 1px solid #e0e0e0;
   margin-top: 2px;
-  /*padding: 70px 0;*/
+  padding: 70px 0 40px;
 }
 section.download .testimonial {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 section.download p {
   margin-top: 20px;
@@ -312,7 +312,7 @@ section.download p {
 }
 section.download .badges .badge-link {
   display: block;
-  margin: 37px 20px;
+  margin: 27px 20px;
 }
 section.download .badges .badge-link:last-child {
   margin-bottom: 0;
@@ -327,13 +327,13 @@ section.download .badges .badge-link img {
     margin-bottom: 0;
   }
   section.download h2 {
-    font-size: 50px;
+    font-size: 45px;
   }
   section.contact{
-    padding-bottom: 130px;
+    padding-bottom: 90px;
   }
 }
-/* -- download -- */
+/* -- features -- */
 section.features{
   position: relative;
   padding: 50px 0 50px;
@@ -390,13 +390,16 @@ section.features .row .title{
 section.features .row .contents a{
   font-style: italic;
   color: black;
-  font-size: 22px;
+  font-size: 19px;
   font-weight: bold;
+}
+section.features .parallax .col-sm-4{
+  text-align: center;
 }
 @media (min-width: 768px){
   section.features .row .title{
-    margin-top: 100px;
-    font-size: 50px;
+    margin-top: 80px;
+    font-size: 40px;
   }
 }
 @media (max-width: 768px){
@@ -404,7 +407,7 @@ section.features .row .contents a{
     margin-top: -30%;
   }
   section.features .row .title{
-    font-size: 40px;
+    font-size: 30px;
     padding: 30px 0;
   }
 }
@@ -422,7 +425,7 @@ section.contact h2 {
   font-weight: bold;
 }
 section.contact h3{
-  font-size: 18px;
+  font-size: 16px;
   color: #808080;
   margin-top: 0;
   letter-spacing: 0.1px;
@@ -431,8 +434,11 @@ section.contact h3{
 
 section.contact ul.list-member {
   margin-top: 60px;
+  padding: 0 50px;
 }
-
+section.contact ul.list-member li{
+  padding: 0 15px;
+}
 section.contact ul.list-member .wrapper{
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -491,17 +497,18 @@ section.contact ul.list-member .profile .member_avatar{
 }
 section.contact ul.list-member .profile .member_avatar img{
   border-radius:50%;
-  width:60px; height:60px;
+  width:50px; height:50px;
 }
 section.contact ul.list-member .profile .member_name{
   color: #363636;
-  font-size: 18px;
-  margin-left: 80px;
+  font-size: 16px;
+  margin-left: 70px;
+  padding-top: 4px;
 }
 section.contact ul.list-member .profile .role{
   color: #667386;
-  font-size: 16px;
-  margin-left: 80px;
+  font-size: 14px;
+  margin-left: 70px;
   text-transform: uppercase;
 }
 /* -- contact -- */
@@ -550,8 +557,9 @@ footer ul li a.active {
 
 @media (min-width: 768px){
   .spotify_img{ 
-    margin-left: 60px; 
-    margin-top: 40px;
+    margin-left: 40px; 
+    margin-top: 30px;
+    max-width: 60%;
   }
   footer .copyright{
     padding-top: 17px;
@@ -636,6 +644,9 @@ body {
   line-height: 81px;
   margin-left: 15px;
 }
+#hostpage header .device-container{
+  max-width: none;
+}
 #hostpage .navbar-default.affix .navbar_title{
   color: black;
 }
@@ -668,7 +679,7 @@ body {
 }
 #hostpage header .header-content .header-content-inner h2 {
   color: #8492af;
-  font-size: 28px;
+  font-size: 25px;
   line-height: 33px;
 }
 #hostpage section#features:before{
@@ -678,6 +689,7 @@ body {
 }
 #hostpage section.features .row{
   margin-bottom: 20px;
+  padding: 0 50px;
 }
 #hostpage section.features .row .col-md-4{
   text-align: center;
@@ -888,4 +900,60 @@ body {
 }
 #integration-list a{
     text-decoration: none;
+}
+
+/* About Page */
+#aboutpage p{
+  font-size: 18px;
+  color: #1a2934;
+}
+#aboutpage header{
+  background: -webkit-linear-gradient(to top, rgba(0,0,0,0.8), rgba( 255, 91, 91, 0.8) );
+  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba( 255, 91, 91, 0.8) );
+  overflow: hidden;
+}
+#aboutpage header video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+}
+#aboutpage header .title h1{
+  padding: 120px 0 100px;
+}
+#aboutpage #about .profile_img{
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#aboutpage #about h2{
+  text-align: center;
+  font-size: 26px;
+  margin-top: 5px;
+}
+
+#aboutpage #about .col-sm-2{
+  padding: 0 30px;
+}
+#aboutpage #mission{
+  text-align: center;
+  padding-top: 0;
+}
+#aboutpage #mission h1{
+  font-size: 40px;
+  font-weight: 900;
+  padding: 40px 10px;
+  font-family: 'Lato';
+  color: black;
+}
+#aboutpage #mission p{
+  font-style: italic;
+  font-family: 'Lato';
+  font-size: 22px;
+  letter-spacing: 1.2px;
 }
