@@ -247,4 +247,13 @@
         $expand = $(this).find(">:first-child");
         $(this).parent().toggleClass('active');
     });
+
+    $('span[data-toggle="tooltip"]').tooltip({
+        animated: 'fade',
+        placement: 'bottom',
+        html: true
+    });
+    $('span[data-toggle="tooltip"]').on('shown.bs.tooltip', function () {
+        $('.tooltip-arrow').html('<div></div>');
+    });
 })();
